@@ -1,0 +1,34 @@
+{
+  "name": "@omnedia/rxjs-typewriter",
+  "version": "1.0.0",
+  "description": "A simple typewriter effect to animate text.",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "keywords": [
+    "rxjs",
+    "npm",
+    "typewriter",
+    "animation"
+  ],
+  "repository": {
+    "url": "https://github.com/omnedia/rxjs-typewriter"
+  },
+  "author": "Markus Block (markus.block@omnedia.com)",
+  "license": "MIT",
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "tsup": "^8.1.0"
+  }
+}
