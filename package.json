@@ -1,6 +1,6 @@
 {
   "name": "@omnedia/rxjs-typewriter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple typewriter effect to animate text.",
   "private": false,
   "main": "./dist/index.js",

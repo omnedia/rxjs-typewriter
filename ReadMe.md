@@ -34,12 +34,13 @@ typewriter.typeWriteEffect(['Hello', 'World'])
 ## API
 
 ```typescript
-typeWriteEffect(words: string[], writeSpeed?: number, deleteDelay?: number, writeDelay?: number): Observable<string>
+typeWriteEffect(words: string[], loop?: boolean, writeSpeed?: number, deleteDelay?: number, writeDelay?: number): Observable<string>
 ```
 
 Starts the typewriter effect.
 
 - `words`: An array of strings to be typed.
+- `loop`: (optional): If set to false, the last word in the words array will stay.
 - `writeSpeed` (optional): The speed of typing each character in milliseconds. Default is 40.
 - `deleteDelay` (optional): The delay before starting to delete the typed word in milliseconds. Default is 3500.
 - `writeDelay` (optional): The delay before starting to type the next word after deleting the current word in milliseconds. Default is 50.
@@ -52,6 +53,7 @@ const typewriter = new TypeWriter();
 
 typewriter.typeWriteEffect(
   ['Hello', 'World'],
+  true,     // loop (default true)
   100,      // write speed
   2000,     // delete delay
   100       // write delay
@@ -70,6 +72,7 @@ const typewriter = new TypeWriter();
 
 typewriter.typeWriteEffect(
   ['Hello', 'World'],
+  true,     // loop (default true)
   100,      // Custom write speed
   2000,     // Custom delete delay
   100       // Custom write delay
